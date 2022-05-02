@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">JobsityChallenge</string>
+    <string name="summary">Summary</string>
+    <string name="genres">Genres</string>
+    <string name="on_tv">On TV</string>
+    <string name="episodes">Episodes</string>
+    <string name="details">Details</string>
+    <string name="search">Search…</string>
+    <string name="favs">Favs</string>
+    <string name="favorites">Favorites</string>
+    <string name="season_1">Season 1</string>
+    <string name="season_x">Season %s</string>
+    <string name="season_episode">S%s, Ep%s</string>
+</resources>

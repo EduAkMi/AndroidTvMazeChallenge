@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top_show_header">14dp</dimen>
+    <dimen name="margin_top_show_info">6dp</dimen>
+    <dimen name="txt_size_show_header">18sp</dimen>
+
+    <dimen name="pad_vert_edt">12dp</dimen>
+    <dimen name="pad_horiz_edt">20dp</dimen>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.fragments.FragmentHome">
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/back_solidwhite_stroke2brown_radius26"
+        android:hint="@string/search"
+        android:imeOptions="actionSearch"
+        android:inputType="textCapSentences"
+        android:maxLength="50"
+        android:paddingHorizontal="@dimen/pad_horiz_edt"
+        android:paddingVertical="@dimen/pad_vert_edt"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/grey_AFAFAF"
+        app:layout_constraintEnd_toStartOf="@id/btnFavs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFavs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/black"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/favs"
+        android:textColor="@color/white"
+        app:cornerRadius="30dp"
+        app:icon="@drawable/ic_favorite_24"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/edtSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edtSearch" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recShows"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtSearch"
+        tools:itemCount="5"
+        tools:listitem="@layout/rec_shows" />
+
+    <ProgressBar
+        android:id="@+id/progressLoading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtSearch"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>
